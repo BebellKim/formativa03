@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o cabeçalho "ADIDAS" */
+.brand-header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Configuração geral do layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho e menu */
+header {
+    background-color: rgb(39, 34, 34);
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu a:hover {
+    color: #ddd;
+}
+
+/* Imagem central principal */
+.banner {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Conteúdo principal */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Grid de produtos */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(25% - 20px);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.name {
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.details {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.status {
+    font-weight: bold;
+    color: #888;
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Menu colorido */
+nav ul li a:hover {
+    color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .product-card {
+        width: 100%;
+    }
+}
+
